@@ -1,167 +1,894 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="google-site-verification"content="cysuwDdo2pYy1Dq66KKs8e8xZtqBTqxI4CeKLOnPQj0"/>
-    <title>Success Pharma</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<meta name="google-site-verification" content="cysuwDdo2pYy1Dq66KKs8e8xZtqBTqxl4CeKLOnPQj0" />
 
-        body {
-            font-family: Arial, sans-serif;
-            background: #f5f9ff;
-            color: #172033;
-        }
+<title>Success Pharma | Healthcare & Pharmaceutical Solutions</title>
 
-        header {
-            background: #ffffff;
-            padding: 18px 22px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-            position: sticky;
-            top: 0;
-        }
+<meta name="description" content="Success Pharma - Professional pharmaceutical and healthcare solutions.">
 
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
-            color: #1261a0;
-        }
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-        .menu {
-            font-size: 26px;
-            color: #1261a0;
-        }
+html{
+    scroll-behavior:smooth;
+}
 
-        .hero {
-            min-height: 520px;
-            padding: 80px 25px;
-            display: flex;
-            align-items: center;
-            background: linear-gradient(135deg, #eaf5ff, #ffffff);
-        }
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:#f6f8fb;
+    color:#18324a;
+    line-height:1.6;
+}
 
-        .hero-content {
-            max-width: 650px;
-        }
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:#09263f;
+    border-bottom:1px solid #caa45a;
+}
 
-        .tag {
-            color: #16804a;
-            font-weight: bold;
-            letter-spacing: 1px;
-            margin-bottom: 15px;
-        }
+.nav{
+    max-width:1200px;
+    margin:auto;
+    padding:17px 22px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
 
-        h1 {
-            font-size: 48px;
-            line-height: 1.1;
-            color: #123b5d;
-            margin-bottom: 20px;
-        }
+.logo{
+    color:#fff;
+    font-size:23px;
+    font-weight:600;
+    letter-spacing:.5px;
+}
 
-        .hero p {
-            font-size: 18px;
-            line-height: 1.7;
-            color: #596579;
-            margin-bottom: 30px;
-        }
+.logo span{
+    color:#d6ad58;
+}
 
-        .button {
-            display: inline-block;
-            background: #1261a0;
-            color: white;
-            padding: 14px 25px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: bold;
-        }
+.logo small{
+    display:block;
+    font-size:8px;
+    letter-spacing:2.5px;
+    color:#aebdca;
+    margin-top:-2px;
+}
 
-        .about {
-            padding: 60px 25px;
-            background: white;
-            text-align: center;
-        }
+.navlinks{
+    display:flex;
+    gap:25px;
+}
 
-        .about h2 {
-            font-size: 32px;
-            color: #123b5d;
-            margin-bottom: 15px;
-        }
+.navlinks a{
+    color:#e8edf2;
+    text-decoration:none;
+    font-size:13px;
+}
 
-        .about p {
-            max-width: 700px;
-            margin: auto;
-            line-height: 1.7;
-            color: #667085;
-        }
+.navlinks a:hover{
+    color:#dfba6a;
+}
 
-        footer {
-            background: #123b5d;
-            color: white;
-            text-align: center;
-            padding: 25px;
-        }
+/* HERO */
 
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 38px;
-            }
+.hero{
+    min-height:610px;
+    display:flex;
+    align-items:center;
+    background:
+    linear-gradient(90deg,rgba(5,27,46,.97),rgba(8,42,67,.84),rgba(8,42,67,.48)),
+    url("https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1800&q=85");
+    background-size:cover;
+    background-position:center;
+}
 
-            .hero {
-                min-height: 500px;
-                padding: 60px 22px;
-            }
-        }
-    </style>
+.hero-inner{
+    max-width:1200px;
+    width:100%;
+    margin:auto;
+    padding:80px 22px;
+}
+
+.label{
+    color:#d7af59;
+    font-size:12px;
+    letter-spacing:2.5px;
+    font-weight:600;
+    margin-bottom:16px;
+}
+
+.hero h1{
+    color:#fff;
+    font-size:clamp(42px,6vw,70px);
+    line-height:1.08;
+    font-weight:500;
+    max-width:750px;
+    margin-bottom:22px;
+}
+
+.hero h1 span{
+    color:#d8b15e;
+}
+
+.hero p{
+    max-width:610px;
+    color:#d7e0e8;
+    font-size:17px;
+    margin-bottom:30px;
+}
+
+.button{
+    display:inline-block;
+    padding:13px 24px;
+    background:#d4aa52;
+    color:#102b44;
+    text-decoration:none;
+    border-radius:4px;
+    font-weight:600;
+}
+
+/* COMMON */
+
+section{
+    padding:80px 22px;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+.section-label{
+    color:#a97f2e;
+    font-size:11px;
+    letter-spacing:2px;
+    font-weight:700;
+    margin-bottom:9px;
+}
+
+h2{
+    color:#102e49;
+    font-size:36px;
+    font-weight:500;
+    margin-bottom:15px;
+}
+
+.intro{
+    color:#667688;
+    max-width:720px;
+}
+
+/* OVERVIEW */
+
+.overview{
+    background:#fff;
+}
+
+.overview-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:55px;
+    align-items:center;
+}
+
+.overview-image{
+    height:390px;
+    border-radius:10px;
+    background:
+    linear-gradient(rgba(6,35,57,.2),rgba(6,35,57,.2)),
+    url("https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1000&q=85");
+    background-size:cover;
+    background-position:center;
+}
+
+.overview p{
+    color:#667688;
+    margin:18px 0;
+}
+
+/* FOUNDATION */
+
+.foundation{
+    background:#f1f5f8;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px;
+    margin-top:40px;
+}
+
+.card{
+    background:#fff;
+    border:1px solid #e0e6ec;
+    border-radius:8px;
+    padding:27px 21px;
+}
+
+.icon{
+    width:44px;
+    height:44px;
+    border-radius:50%;
+    background:#f8efdb;
+    color:#a97d29;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:18px;
+    font-size:19px;
+}
+
+.card h3{
+    color:#173650;
+    font-size:17px;
+    margin-bottom:8px;
+}
+
+.card p{
+    color:#718092;
+    font-size:13px;
+}
+
+/* BUSINESS PLAN */
+
+.plan{
+    background:#fff;
+}
+
+.plan-head{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.plan-table{
+    max-width:900px;
+    margin:auto;
+    overflow:hidden;
+    border:1px solid #dfe5eb;
+    border-radius:9px;
+}
+
+.plan-row{
+    display:grid;
+    grid-template-columns:1.5fr 1fr 1fr;
+}
+
+.plan-row div{
+    padding:17px 20px;
+    border-bottom:1px solid #e3e8ed;
+}
+
+.plan-row.header{
+    background:#092b47;
+    color:#fff;
+    font-weight:600;
+}
+
+.plan-row:not(.header) div{
+    color:#4f6275;
+    background:#fff;
+}
+
+.plan-row:last-child div{
+    border-bottom:0;
+}
+
+.highlight{
+    color:#9a7428 !important;
+    font-weight:700;
+}
+
+/* LEVELS */
+
+.levels{
+    background:#f3f6f9;
+}
+
+.level-grid{
+    max-width:950px;
+    margin:40px auto 0;
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:12px;
+}
+
+.level{
+    background:#fff;
+    border:1px solid #e0e5ea;
+    border-radius:7px;
+    padding:17px 10px;
+    text-align:center;
+}
+
+.level strong{
+    display:block;
+    color:#173651;
+    font-size:13px;
+}
+
+.level span{
+    color:#ae832f;
+    font-size:17px;
+    font-weight:700;
+}
+
+/* LEADERSHIP */
+
+.leader{
+    background:#092b47;
+    color:#fff;
+    text-align:center;
+}
+
+.leader h2{
+    color:#fff;
+}
+
+.leader .intro{
+    color:#cbd7e1;
+    margin:auto;
+}
+
+.leader-box{
+    max-width:760px;
+    margin:35px auto 0;
+    padding:32px;
+    border:1px solid rgba(215,175,89,.55);
+    border-radius:9px;
+    background:rgba(255,255,255,.04);
+}
+
+.leader-box h3{
+    color:#dfb75f;
+    font-size:22px;
+    margin-bottom:10px;
+}
+
+.leader-box p{
+    color:#d1dce5;
+}
+
+/* MISSION */
+
+.mission{
+    background:#fff;
+}
+
+.mission-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:22px;
+    margin-top:40px;
+}
+
+.mission-box{
+    padding:35px;
+    background:#f4f7f9;
+    border-left:3px solid #d1a64f;
+    border-radius:6px;
+}
+
+.mission-box h3{
+    color:#173650;
+    margin-bottom:10px;
+    font-size:21px;
+}
+
+.mission-box p{
+    color:#68798a;
+}
+
+/* CONTACT */
+
+.contact{
+    background:#f1f5f8;
+    text-align:center;
+}
+
+.contact p{
+    max-width:700px;
+    margin:auto;
+    color:#68798a;
+}
+
+/* FOOTER */
+
+footer{
+    background:#061d31;
+    color:#9dabb9;
+    padding:35px 22px;
+}
+
+.footer-inner{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.footer-logo{
+    color:#fff;
+    font-size:21px;
+    font-weight:600;
+}
+
+.footer-logo span{
+    color:#d5ad58;
+}
+
+.copyright{
+    margin-top:12px;
+    font-size:11px;
+    color:#758595;
+}
+
+/* MOBILE */
+
+@media(max-width:850px){
+
+    .navlinks{
+        display:none;
+    }
+
+    .hero{
+        min-height:570px;
+    }
+
+    .hero h1{
+        font-size:43px;
+    }
+
+    .overview-grid{
+        grid-template-columns:1fr;
+    }
+
+    .overview-image{
+        order:-1;
+        height:300px;
+    }
+
+    .cards{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .levels{
+        padding-left:15px;
+        padding-right:15px;
+    }
+
+    .level-grid{
+        grid-template-columns:repeat(4,1fr);
+    }
+
+    .mission-grid{
+        grid-template-columns:1fr;
+    }
+}
+
+@media(max-width:520px){
+
+    section{
+        padding:65px 17px;
+    }
+
+    .hero-inner{
+        padding:65px 18px;
+    }
+
+    .hero h1{
+        font-size:38px;
+    }
+
+    h2{
+        font-size:30px;
+    }
+
+    .cards{
+        grid-template-columns:1fr;
+    }
+
+    .level-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .plan-row{
+        grid-template-columns:1.4fr 1fr 1fr;
+    }
+
+    .plan-row div{
+        padding:14px 10px;
+        font-size:12px;
+    }
+
+    .leader-box{
+        padding:25px 18px;
+    }
+}
+</style>
 </head>
 
 <body>
 
-    <header>
-        <div class="logo">Success Pharma</div>
-        <div class="menu">☰</div>
-    </header>
+<header>
+    <div class="nav">
 
-    <section class="hero">
-        <div class="hero-content">
-
-            <div class="tag">WELCOME TO SUCCESS PHARMA</div>
-
-            <h1>Healthcare With Trust & Quality</h1>
-
-            <p>
-                We are committed to providing quality pharmaceutical
-                products and reliable healthcare solutions.
-            </p>
-
-            <a href="#about" class="button">Discover More</a>
-
+        <div class="logo">
+            SUCCESS <span>PHARMA</span>
+            <small>HEALTHCARE • QUALITY • TRUST</small>
         </div>
-    </section>
 
-    <section class="about" id="about">
+        <nav class="navlinks">
+            <a href="#home">Home</a>
+            <a href="#overview">Overview</a>
+            <a href="#plan">Business Plan</a>
+            <a href="#mission">Mission & Vision</a>
+            <a href="#contact">Contact</a>
+        </nav>
 
-        <h2>About Success Pharma</h2>
+    </div>
+</header>
+
+
+<section class="hero" id="home">
+
+    <div class="hero-inner">
+
+        <div class="label">
+            PHARMACEUTICAL & HEALTHCARE
+        </div>
+
+        <h1>
+            Advancing Healthcare.<br>
+            <span>Building a Better Future.</span>
+        </h1>
 
         <p>
-            Success Pharma is focused on quality, reliability and
-            better healthcare solutions. Our goal is to build trust
-            through professional service and quality products.
+            Success Pharma is focused on quality, innovation and
+            professional healthcare solutions with a vision for
+            long-term global growth.
         </p>
 
-    </section>
+        <a href="#overview" class="button">
+            Explore Success Pharma →
+        </a>
 
-    <footer>
-        © 2026 Success Pharma. All Rights Reserved.
-    </footer>
+    </div>
+
+</section>
+
+
+<section class="overview" id="overview">
+
+    <div class="container overview-grid">
+
+        <div>
+
+            <div class="section-label">
+                BUSINESS OVERVIEW
+            </div>
+
+            <h2>
+                A Modern Approach to Healthcare
+            </h2>
+
+            <p>
+                Success Pharma is committed to developing a
+                professional healthcare business built around
+                quality, innovation and reliable service.
+            </p>
+
+            <p>
+                Our focus is to create a trusted and forward-looking
+                organization with a strong commitment to people,
+                professional standards and continuous development.
+            </p>
+
+        </div>
+
+        <div class="overview-image"></div>
+
+    </div>
+
+</section>
+
+
+<section class="foundation">
+
+    <div class="container">
+
+        <div class="section-label">
+            OUR FOUNDATION
+        </div>
+
+        <h2>
+            What We Stand For
+        </h2>
+
+        <p class="intro">
+            Our approach is guided by quality, professionalism
+            and a long-term vision for healthcare.
+        </p>
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="icon">✦</div>
+                <h3>Quality</h3>
+                <p>
+                    Maintaining a consistent focus on quality
+                    and professional standards.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">◉</div>
+                <h3>Innovation</h3>
+                <p>
+                    Embracing modern ideas and technologies
+                    for better healthcare solutions.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">✓</div>
+                <h3>Trust</h3>
+                <p>
+                    Building lasting relationships through
+                    reliable and transparent service.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">◇</div>
+                <h3>Global Vision</h3>
+                <p>
+                    Developing a forward-looking organization
+                    with an international outlook.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="plan" id="plan">
+
+    <div class="container">
+
+        <div class="plan-head">
+
+            <div class="section-label">
+                BUSINESS PLAN
+            </div>
+
+            <h2>
+                Investment Structure
+            </h2>
+
+            <p class="intro" style="margin:auto;">
+                The current plan structure is presented below
+                in a clear and professional format.
+            </p>
+
+        </div>
+
+        <div class="plan-table">
+
+            <div class="plan-row header">
+                <div>Investment</div>
+                <div>Rate</div>
+                <div>Duration</div>
+            </div>
+
+            <div class="plan-row">
+                <div>$25 – $5,000</div>
+                <div class="highlight">6%</div>
+                <div>35 Days</div>
+            </div>
+
+            <div class="plan-row">
+                <div>$5,001 & Above</div>
+                <div class="highlight">10%</div>
+                <div>25 Days</div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="levels">
+
+    <div class="container">
+
+        <div class="section-label">
+            LEVEL STRUCTURE
+        </div>
+
+        <h2>
+            20 Level Income
+        </h2>
+
+        <p class="intro">
+            The level structure is presented below for
+            clear reference.
+        </p>
+
+        <div class="level-grid">
+
+            <div class="level"><strong>Level 01</strong><span>1.13%</span></div>
+            <div class="level"><strong>Level 02</strong><span>1.10%</span></div>
+            <div class="level"><strong>Level 03</strong><span>0.90%</span></div>
+            <div class="level"><strong>Level 04</strong><span>0.80%</span></div>
+            <div class="level"><strong>Level 05</strong><span>0.70%</span></div>
+
+            <div class="level"><strong>Level 06</strong><span>0.60%</span></div>
+            <div class="level"><strong>Level 07</strong><span>0.50%</span></div>
+            <div class="level"><strong>Level 08</strong><span>0.40%</span></div>
+            <div class="level"><strong>Level 09</strong><span>0.20%</span></div>
+            <div class="level"><strong>Level 10</strong><span>0.10%</span></div>
+
+            <div class="level"><strong>Level 11</strong><span>0.75%</span></div>
+            <div class="level"><strong>Level 12</strong><span>0.75%</span></div>
+            <div class="level"><strong>Level 13</strong><span>0.75%</span></div>
+            <div class="level"><strong>Level 14</strong><span>0.75%</span></div>
+            <div class="level"><strong>Level 15</strong><span>0.75%</span></div>
+
+            <div class="level"><strong>Level 16</strong><span>0.75%</span></div>
+            <div class="level"><strong>Level 17</strong><span>0.75%</span></div>
+            <div class="level"><strong>Level 18</strong><span>0.75%</span></div>
+            <div class="level"><strong>Level 19</strong><span>0.75%</span></div>
+            <div class="level"><strong>Level 20</strong><span>0.75%</span></div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="leader">
+
+    <div class="container">
+
+        <div class="section-label">
+            LEADERSHIP
+        </div>
+
+        <h2>
+            Leadership Benefits
+        </h2>
+
+        <p class="intro">
+            Special recognition and additional benefits can be
+            presented here for qualifying leaders.
+        </p>
+
+        <div class="leader-box">
+
+            <h3>Leadership Excellence</h3>
+
+            <p>
+                A dedicated section for leadership recognition,
+                additional income opportunities and special
+                benefits for qualifying members.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="mission" id="mission">
+
+    <div class="container">
+
+        <div class="section-label">
+            OUR PURPOSE
+        </div>
+
+        <h2>
+            Mission & Vision
+        </h2>
+
+        <div class="mission-grid">
+
+            <div class="mission-box">
+
+                <h3>Our Mission</h3>
+
+                <p>
+                    To build a professional healthcare organization
+                    focused on quality, innovation, reliable service
+                    and continuous improvement.
+                </p>
+
+            </div>
+
+            <div class="mission-box">
+
+                <h3>Our Vision</h3>
+
+                <p>
+                    To become a trusted international healthcare
+                    organization recognized for quality, innovation
+                    and a forward-looking approach.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="contact" id="contact">
+
+    <div class="container">
+
+        <div class="section-label">
+            CONTACT
+        </div>
+
+        <h2>
+            Connect With Success Pharma
+        </h2>
+
+        <p>
+            For business enquiries, partnerships and further
+            information, please connect with our team.
+        </p>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <div class="footer-inner">
+
+        <div>
+
+            <div class="footer-logo">
+                SUCCESS <span>PHARMA</span>
+            </div>
+
+            <div class="copyright">
+                © 2026 Success Pharma. All Rights Reserved.
+            </div>
+
+        </div>
+
+        <div>
+            Pharmaceutical & Healthcare Solutions
+        </div>
+
+    </div>
+
+</footer>
 
 </body>
-              </html>
+</html>
